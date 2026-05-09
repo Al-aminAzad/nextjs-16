@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { buttonVariants } from "../ui/button"
-import { ThemeToggle } from "./theme-toggle"
+import { ThemeToggle } from "./ThemeToggle"
 
 export const Navbar = () => {
     return (
