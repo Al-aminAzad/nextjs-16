@@ -31,18 +31,16 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-                  <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-        <main className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
-          <Navbar />
-          {children}
-        </main>
-          </ThemeProvider>
-
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
+            {children}
+          </main>
+        </ThemeProvider>
 
       </body>
     </html>
