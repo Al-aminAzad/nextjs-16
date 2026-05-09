@@ -16,6 +16,10 @@ export const SignUpPage = () => {
             password: "",
         },
     })
+
+    const onSubmit = (data: any) => {
+        console.log(data)
+    }
     return (
         <Card>
             <CardHeader>
@@ -25,7 +29,7 @@ export const SignUpPage = () => {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <form>
+                <form onSubmit={form.handleSubmit(onSubmit)} >
                     <FieldGroup className="gap-y-4" >
                         <Controller
                             name="name"
